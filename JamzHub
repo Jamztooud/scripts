@@ -23,12 +23,7 @@ local Window = Rayfield:CreateWindow({
     DisableRayfieldPrompts = false,
     DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
  
-    ConfigurationSaving = {
-       Enabled = true,
-       FolderName = Jamz hub, -- Create a custom folder for your hub/game
-       FileName = "Jamz Hub"
-    },
- 
+  
     Discord = {
        Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
        Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
