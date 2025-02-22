@@ -89,6 +89,15 @@ local ButtonBloxFruits = Tab:CreateButton({
    end,
 })
 
+local Tab = Window:CreateTab("Rivals", 4483362458) -- Title, Image
+
+local ButtonClose = Tab:CreateButton({
+   Name = "Launch Ronix Rivals",
+   Callback = function()
+     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/31adf31e02665d1801c2e40d659fe00d.lua"))()
+   end,
+})
+
 local Tab = Window:CreateTab("Close❌", 4483362458) -- Title, Image
 
 local ButtonClose = Tab:CreateButton({
