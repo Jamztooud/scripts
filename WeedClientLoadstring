@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jamztooud/scripts/refs/heads/main/WeedClient.lua", true))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jamztooud/scripts/refs/heads/main/WeedClient", true))();
