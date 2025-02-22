@@ -1,12 +1,13 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-local Player = game.Players.LocalPlayer
+
+
 
 
 setclipboard("https://link-target.net/1300459/weed-hub-key");
 
 Rayfield:Notify({
-    Title = "Weed Hub",
+    Title = "Jamz Hub",
     Content = "Notification Content",
     Duration = 6.5,
     Image = 4483362458,
@@ -24,8 +25,8 @@ local Window = Rayfield:CreateWindow({
  
     ConfigurationSaving = {
        Enabled = true,
-       FolderName = WeedClient, -- Create a custom folder for your hub/game
-       FileName = "WeedClient"
+       FolderName = Jamz hub, -- Create a custom folder for your hub/game
+       FileName = "Jamz Hub"
     },
  
     Discord = {
@@ -36,22 +37,67 @@ local Window = Rayfield:CreateWindow({
  
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
-       Title = "Untitled",
+       Title = "Jamz hub Key System",
        Subtitle = "Key System",
        Note = "Open the Copied link to get the key. Then Paste it here.", -- Use this to tell the user how to get a key
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
-       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
        Key = {"https://pastebin.com/raw/CyZqyuim"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
 
- local Tab = Window:CreateTab("WeedClient", 4483362458) -- Title, Image
+ local Tab = Window:CreateTab("Gunfight", 4483362458) -- Title, Image
 
- local Button = Tab:CreateButton({
+ local ButtonGunfight = Tab:CreateButton({
     Name = "Launch WeedClient",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ex5s/weedclient/refs/heads/main/main.lua", true))();
-        Rayfield:Destroy()
+        
     end,
  })
+
+ local Tab = Window:CreateTab("Arsenal", 4483362458) -- Title, Image
+
+ local ButtonArsenal = Tab:CreateButton({
+   Name = "Launch Ronix Arsenal",
+   Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/93f86be991de0ff7d79e6328e4ceea40.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Fisch🐟", 4483362458) -- Title, Image
+
+ local ButtonFisch = Tab:CreateButton({
+   Name = "Launch Ronix Fisch",
+   Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/62e146774e90fa89954a11dfda4884b3.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Blox Fruits", 4483362458) -- Title, Image
+
+local ButtonBloxFruits = Tab:CreateButton({
+   Name = "Launch Ronix Blox Fruits",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Blade Ball", 4483362458) -- Title, Image
+
+local ButtonBloxFruits = Tab:CreateButton({
+   Name = "Launch Ronix Blade Ball",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Close❌", 4483362458) -- Title, Image
+
+local ButtonClose = Tab:CreateButton({
+   Name = "Close Jamz Hub",
+   Callback = function()
+      Rayfield:Destroy()
+   end,
+})
